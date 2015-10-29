@@ -4,6 +4,11 @@ machine:
   node:
     version:
       0.12.2
+deployment:
+  hub:
+    branch: master
+    commands:
+      - $DOCKERTRIGGER
 test:
   pre:
     - npm start:
